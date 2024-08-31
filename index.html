@@ -3,141 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        header,footer {
-            background-color: rgb(130, 139, 137);
-            text-align: center;
-        }
-    </style>
-    
+    <title>Trabajo Práctico de CSS</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header id="inicio">
-        <h1>Encabezado Principal1</h1>
-    </header>
-    <main>
-        <h2 id="estructura">1. Estructura Básica del Documento HTML</h2><p>Este documento HTML tiene una estructura básica que incluye 
-            la declaración de DOCTYPE, etiquetas de mandatos y un titulo</p>
-        <h2 id="encabezados">2. Encabezados y Propiedades del Texto</h2>
-        <div style="color:green">
-            <section>
-                <h3>Experimentos de texto</h3>
-                <h4>Prueba texto en negrita</h4>
-                <p> 
-                    <span style="font-weight: bold;">Esto es un texto en negrita</span><br>
-                    <span style="font-style: italic;">Esto es un texto en cursiva</span><br>
-                    <span style="text-decoration: underline;">Esto es un texto subrayado</span>
-                </p>
-            </section>
+    <header class="cabecera">
+        <blockquote>
+            trabajo práctico de CSS
+        </blockquote>
+    </header> 
+
+    <section class="propiedades-texto">
+        <h3>Propiedades de Texto en CSS</h3>
+        <hr class="subrayado">
+        <p>Este es un párrafo que demuestra las propiedades de texto en CSS. Como
+            alineacion. Transformación de texto y decoraciones
+        </p>
+        <blockquote>
+            "El buen diseño es obvio. El gran diseño es transparente"---Joe Sparano
+        </blockquote>
+    </section>
+
+    <section class="propiedades-caja">
+        <h3>Propiedades de Caja en CSS</h3>
+        <hr class="subrayado">
+        <div class="caja-comun">
+            <p>Esta es una caja con propiedades de padding, margin, border 
+                y box-shadow, lo que le da un efecto tridimensional
+            </p>
         </div>
-        <h2 id="divisiones">3. Divisiones y Agrupacion de contenido</h2>
-        <section>
-            <div>
-                <p>Contenido de la primera sección agrupada en un div</p>
+        <div class="caja-destacada">
+            <p>Esta es una caja destacada con un borde mas grueso y un fondo diferente</p>
+        </div>
+    </section>
+
+    <section class="posicion-relativa-absoluta">
+        <h3>Posición Relativa y Absoluta en CSS</h3>
+        <hr class="subrayado">
+
+        <div class="relativo">
+            <p>Esta caja tiene posición relativa, lo que significa que se puede ajustar
+                en relación a su posición original
+            </p>
+            <div class="absoluto">
+                <p>Esta caja tiene posición absoluta dentro de la relativa, y se posiciona 
+                    respecto de la caja madre</p>
             </div>
-        </section>
-        <section>
-            <div>
-                <p>Contenido de la segunda sección agrupada en un div</p>
-            </div>
-        </section>
-        <h2 id="enlaces">4. Enlaces y Listas</h2>
-        <h3>Principales ciudades para visitar</h3>
-        <section>
-            <h4>Europa</h4>
-            <ol>
-                <li><p>La hermosa ciudad de <a href="https://www.google.com/maps/place/Rome,+Metropolitan+City+of+Rome+Capital,
-                    +Italy/@41.9102083,12.3708487,11z/data=!3m1!4b1!4m6!3m5!1s0x132f6196f9928ebb:0xb90f
-                    770693656e38!8m2!3d41.8967068!4d12.4822025!16zL20vMDZjNjI?entry=ttu" target="_blank">ROMA</a></p></li>
+        </div>
+    </section>
 
-                <li><p>La exótica ciudad de <a href="https://www.google.com/maps/place/Paris,+France/@48.8589383,2.2644634,12z/
-                    data=!3m1!4b1!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.8575475!4d2.3513765!16zL20vMDVxdGo?entry=ttu"
-                    target="_blank">PARÍS</a></p></li>
+    <section class="seccion-grid">
+        <h3>Principios de Grid en CSS</h3>
+        <hr class="subrayado">
+    
+        <div class="grid-container">
+            <div class="grid-item">Elemento 1</div>
+            <div class="grid-item">Elemento 2</div>
+            <div class="grid-item">Elemento 3</div>
+            <div class="grid-item">Elemento 4</div>
+        </div>
+    </section>
 
-                <li><p>La increíble ciudad de <a href="https://www.google.com/maps/place/London,+UK/@51.5287393,-0.2667462,11z/data=!3m1
-                    !4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu" 
-                    target="_blank">LONDRES</a></p></li>
-            </ol>
-        </section>
+    <section class="seccion-animaciones">
+        <h3>Principios de Animaciones en CSS</h3>
+        <hr class="subrayado">
+    
+        <div class="animacion">
+            Pasa el mouse sobre este cuadro.
+        </div>
+    
+        <div class="mover">
+            Estoy en movimiento
+        </div>
+    </section>
 
-        <section>
-            <h3>4.1. Enlaces internos</h3>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Ir a inicio</a><br></li>
-                    <li><a href="#estructura">Ir a Estructura Básica del Documento HTML</a><br></li>
-                    <li><a href="#encabezados">Ir a Encabezados y Propiedades del Texto</a><br></li>
-                    <li><a href="#divisiones">Ir a Divisiones y Agrupacion de contenido</a><br></li>
-                    <li><a href="#enlaces">Ir a Enlaces y Listas</a><br></li>
-                    <li><a href="#multimedia">Ir a Enlaces Multimedia</a><br></li>
-                    <li><a href="#tablas">Ir a Tablas</a><br></li>
-                    <li><a href="#formularios">Ir a Formularios</a><br></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section id="multimedia">
-            <h2>5. Elementos Multimedia</h2>
-
-            <h5>Imagen</h5>
-            <img src="https://innovavista.net/imagenes/archivos/proyectos/272_imagen_750x480xrecortarSuperior.jpg?random=1718736901" alt="imagen UTN">
-
-            <h5>Video</h5>
-            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" controls muted width="400px" height="400px"></video>
-
-            <h5>Audio</h5>
-            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
-
-        </section>
-
-        <section id="tablas">
-            <h2>6. Tablas</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Columna 1</th>
-                            <th>Columna 2</th>
-                        </tr>
-                    </thead>
-                    <tbody> 
-                        <tr>
-                            <td>Dato 1</td>
-                            <td>Dato 2</td>
-                        </tr>
-                        <tr>
-                            <td>Dato 3</td>
-                            <td>Dato 4</td>
-                        </tr>
-                    </tbody>
-                </table>
-        </section>
-
-        <section id="formularios">
-            <h2>7. Formularios</h2>
-            <form>
-   
-                    <label>Nombre </label>
-                    <input type="text" placeholder="Ingrese su nombre">
- 
-
-                    <label>Email </label>
-                    <input type="email" placeholder="example@example.com">
-
-
-                    <label>Mensaje </label>
-                    <textarea placeholder="Ingrese su mensaje"></textarea>
-
-
-                <button type="submit">Enviar</button>
-                <br>
-                <br>
-            </form>
-        </section>
-
-    </main>
-    <footer>
-        <h6><a href="#inicio">Volver al inicio</a></h6>
-    </footer>
 </body>
 </html>
